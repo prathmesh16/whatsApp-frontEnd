@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/ui/UserChatCard.dart';
+import 'package:whats_app_clone/ui/user_status_screen.dart';
 
 import 'models/UserChat.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           home:MyHomePage(),
-          
+
        );
   }
 }
@@ -90,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         children: [
           Icon(Icons.camera_alt),
           _makeChatList(),
-          Text("Status Screen"),
+          UserStatusScreen(),
           Text("Call Screen"),
         ],
       ),
